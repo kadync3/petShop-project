@@ -6,7 +6,7 @@ var parsedData = JSON.parse(dataArr);
 // if no argv[2]
 
 if (process.argv[2] == undefined) {
-  console.log("Usage: node pets.js [read | create | update | destroy]");
+ console.log("Usage: node pets.js [read | create | update | destroy]");
 }
 
 // wrap in a process.argv[2] if read
@@ -93,4 +93,4 @@ if(process.argv[2] === "destroy"){
  })
 }
 }
-module.exports.petShop = petShop
+module.exports = petShop
