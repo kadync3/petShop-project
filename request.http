@@ -1,0 +1,22 @@
+###
+GET http://localhost:8000/
+###
+GET http://localhost:8000/pets
+###
+GET http://localhost:8000/pets/2
+###
+POST http://localhost:8000/pets
+Content-Type: application/json
+
+{"age": "3", "kind": "mouse", "name": "brad"  }
+
+###
+DELETE http://localhost:8000/pets/7 
+
+###
+PATCH http://localhost:8000/pets/2
+Content-Type: application/json
+
+{"kind": "frog"}
+
+
